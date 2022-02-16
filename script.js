@@ -18,10 +18,11 @@ function search() {
         document.getElementById("inp").value = ""
         if (s in cmd) {
             window.location = cmd[s];
+        } else {
+            window.location = "https://www.google.com/search?q=" + s;
         }
 
 
-        window.location = "https://www.google.com/search?q=" + s;
 
     }
 }
