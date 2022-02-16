@@ -3,4 +3,5 @@ const cmd = {
     ".r": "https://www.reddit.com",
     ".y": "https://www.youtube.com",
     ".g": "https://www.gmail.com",
+    ".o": "https://www.office.com",
 }
