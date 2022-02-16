@@ -16,14 +16,12 @@ function search() {
     if (event.keyCode == 13) {
         const s = document.getElementById("inp").value
         document.getElementById("inp").value = ""
-        if (s.charAt(0) == ".") {
-            try {
-                window.location = cmd[s];
-            } catch {
-                window.location = "https://www.google.com/search?q=" + s;
-            }
-        } else {
-            window.location = "https://www.google.com/search?q=" + s;
+        if (s in cmd) {
+            window.location = cmd[s];
         }
+
+
+        window.location = "https://www.google.com/search?q=" + s;
+
     }
 }
