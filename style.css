@@ -29,7 +29,6 @@ body {
 .con {
     width: 100vw;
     height: 100vh;
-    border: #000 1px solid;
     display: flex;
     justify-content: center;
     align-items: center;
