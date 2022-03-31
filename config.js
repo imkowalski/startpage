@@ -4,4 +4,5 @@ const cmd = {
     ".y": "https://www.youtube.com",
     ".g": "https://github.com/",
     ".o": "https://www.office.com",
+    ".b": "https://play.google.com/books/uploads",
 }
