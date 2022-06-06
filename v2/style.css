@@ -1,0 +1,58 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    transition: 0.2s;
+    color: gray;
+}
+
+#text {
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    border-bottom: solid black 1px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.headdiv {
+    height: 100vh;
+}
+
+.columns {
+    text-align: center;
+}
+
+.list {
+    font-weight: 600;
+}
+
+.list ul {
+    list-style-type: none;
+}
+
+.div {
+    padding: 5%;
+    border: solid rgb(34, 34, 34) 2px;
+    background-color: white;
+    box-shadow: 12px 12px 1px rgba(0, 255, 200, 0.493);
+    position: relative;
+    top: 25%;
+}
+
+#icon {
+    width: 40%;
+    height: 40%;
+}

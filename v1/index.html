@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+        @media (prefers-color-scheme: light) {
+             :root {
+                --p_color: rgb(255, 255, 255);
+                --s_color: #000;
+            }
+        }
+        
+        @media (prefers-color-scheme: dark) {
+             :root {
+                --p_color: #000;
+                --s_color: #fff;
+            }
+        }
+        
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--p_color);
+            font-family: 'Roboto Mono', monospace;
+        }
+        
+        #time {
+            text-align: center;
+            font-size: 6rem;
+        }
+        
+        .con {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .items {
+            align-self: center;
+        }
+        
+        #inp {
+            width: 96%;
+            text-align: center;
+            font-size: 2rem;
+            border: 0px;
+            margin: 10px;
+        }
+        
+        #inp:focus {
+            caret-color: #777777;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body id="d">
+    <script src="./config.js"></script>
+    <script>
+        function timeNow() {
+            var d = new Date(),
+                h = (d.getHours() < 10 ? '0' : '') + d.getHours(),
+                m = (d.getMinutes() < 10 ? '0' : '') + d.getMinutes();
+            return h + ':' + m;
+        }
+        window.onload = () => {
+            document.getElementById("inp").focus()
+        }
+        setInterval(() => {
+            document.getElementById("time").innerHTML = timeNow()
+            document.getElementById("inp").focus()
+            document.getElementsById("d").style.backgroundColor = "#093494"
+        }, 1)
+
+        function search() {
+            if (event.keyCode == 13) {
+                const s = document.getElementById("inp").value
+                document.getElementById("inp").value = ""
+                if (s in cmd) {
+                    window.location = cmd[s];
+                } else {
+                    window.location = "https://www.google.com/search?q=" + s;
+                }
+
+
+
+            }
+        }
+    </script>
+    <div class="con">
+        <div class="items">
+            <div class="msg">
+                <h1 id="time"></h1>
+            </div>
+            <div class="search">
+                <input type="text" id="inp" value="" onkeydown="search()">
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

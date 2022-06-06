@@ -1,0 +1,1 @@
+api key : console -> localStorage.setItem("api","{API KEY GOES HERE}")
