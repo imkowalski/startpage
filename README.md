@@ -5,7 +5,8 @@
 <p id="description">A simple repo with two startpages</p>
 
 <h2>🚀 Demo</h2>
-This is my instance the project you can use it if you want, but beware that the location is hardcoded in version 2, if you wanna change it read below how to run your local instance [startpage-eight.vercel.app](https://startpage-eight.vercel.app/)
+This is my instance the project you can use it if you want, but beware that the location is hardcoded in version 2, if you wanna change it read below how to run your local instance<br>
+https://startpage-eight.vercel.app
 
 <h2>📷 Project Screenshots:</h2>
 
